@@ -90,7 +90,7 @@
 }
 
 .leaflet-bottom{
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .leaflet-popup-tip{
@@ -98,8 +98,3 @@
     border: 0.5px solid black;
 }
 
-.gdpgrowth{
-    width: 50%;
-    height: 50vh;
-    
-}
