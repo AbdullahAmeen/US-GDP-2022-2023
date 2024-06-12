@@ -9,6 +9,8 @@ var map = L.map('map', {
   crs: crs42303,
   maxZoom: 14,
 	minZoom: 0,
+  scrollWheelZoom: false,
+  dragging: false,
 }).setView([42, -97.0], 0);
 
 var choroplethmap = L.choropleth(stategdp, {
