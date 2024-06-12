@@ -10,10 +10,9 @@ var map = L.map('map', {
   maxZoom: 14,
 	minZoom: 0,
   scrollWheelZoom: false,
-  dragging: false,
 }).setView([42, -97.0], 0);
 
-var choroplethmap = L.choropleth(stategdp, {
+var choroplethmap = L.choropleth(stategdps, {
 	valueProperty: 'Population', // which property in the features to use
 	scale: ['#ffffcc', '#c7e9b4', '#7fcdbb', '#41b6c4', '#2c7fb8', '#253494'], // chroma.js scale - include as many as you like
 	steps: 7, // number of breaks or steps in range
@@ -27,8 +26,8 @@ var choroplethmap = L.choropleth(stategdp, {
 	onEachFeature: function(feature, layer) {
 		layer.bindPopup("<span class='headings'> State: </span>" + feature.properties.NAME + "<br>" + "<span class='headings'> Population: </span>" + feature.properties.Population.toLocaleString().replace(/B(?=(d{3})+(?!d))/g, ",")
      + "<br>" + "<span class='headings'>2023 GDP: </span>" + "$" + feature.properties.GDP .toLocaleString().replace(/B(?=(d{3})+(?!d))/g, ",") + "<br>" + "<span class='headings'>2022 GDP: </span>"+ "$"+ feature.properties.GDP2022.toLocaleString().replace(/B(?=(d{3})+(?!d))/g, ",")
-     + "<br>" + "<span class='headings'>Growth in GDP: </span>" + feature.properties.ChangeGDP + "%",)
-    
+     + "<br>" + "<span class='headings'>Growth in GDP: </span>" + feature.properties.ChangeGDP + "%"
+    + "<br>" + "<span class='headings'>GDP by Counties: </span>" + feature.properties.CountieGDP)
 
 
 
