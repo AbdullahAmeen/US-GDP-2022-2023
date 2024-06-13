@@ -9,7 +9,6 @@ var map = L.map('map', {
   crs: crs42303,
   maxZoom: 14,
 	minZoom: 0,
-  scrollWheelZoom: false,
 }).setView([42, -97.0], 0);
 
 var choroplethmap = L.choropleth(stategdps, {
@@ -91,32 +90,21 @@ new Chart(document.getElementById("gdplinechart"), {
               15049,15599,16254,16843,17550,18206,18695,19477,20533,21381,
               21060,23315,25439, 27360  
         ],
-        label: "Gross Domestic Product (GDP) in $Billions",
+        label: "GDP in $Billion",
         borderColor: "#F69321",
-        borderWidth:3,
-        fontSize: 25,
+        borderWidth:1,
+        fontSize: 15,
         fill: 'red',
-        borderColor: ['white' ],
-        pointBackgroundColor: ['yellow'],
-        pointBorderColor: ['yellow'],
-        pointRadius:2,
-        hoverRadius: 10,
+        borderColor: ['yellow' ],
+        pointBackgroundColor: ['white'],
+        pointBorderColor: ['white'],
+        pointRadius:1,
+        
         
       }
     ]
   },
+  options:{
+
+  }
 });
-
-var options = {
-    scales: {
-        yAxes: [{
-          
-            ticks: {
-                fontSize: 20,
-                
-            },
-
-        }]
-    
-    }
-}

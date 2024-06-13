@@ -93,7 +93,7 @@
 }
 
 .leaflet-bottom{
-    margin-bottom: 45px;
+    margin-bottom: 65px;
 }
 
 .leaflet-popup-tip{
@@ -111,12 +111,12 @@
 
 #gdplinechart{
     height: 70vh;
-    width: 90%;
+    width: 80%;
     border: 1px solid rgb(252, 252, 250);
     background-color: rgb(7, 9, 31);
 }
 
-.ChartTitle{
+.GDPTitle{
+    font-size: 22px;
     color: white;
-
 }
