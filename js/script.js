@@ -94,19 +94,28 @@ new Chart(document.getElementById("gdplinechart"), {
         ],
         label: "GDP in $Billion",
         borderColor: "#F69321",
-        borderWidth:1,
+        borderWidth:2,
         fontSize: 15,
         fill: 'red',
         borderColor: ['yellow' ],
         pointBackgroundColor: ['white'],
         pointBorderColor: ['white'],
-        pointRadius:1,
+        pointRadius:2,
         
         
       }
     ]
   },
   options:{
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero:true
+            }
+        }]
+    }
 
   }
 });

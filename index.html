@@ -10,8 +10,37 @@
     <link rel="stylesheet" href="css/leaflet.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<div class="container-fluid" style="background-color: rgb(0, 0, 0);">
+<body style="background-color: rgb(0, 0, 0);">
+
+    <div class="container-fluid" style="text-align: center;">
+        <div class="row">
+            <div class="col-lg-6">
+                <div id="map">
+                    <div class="Title">
+                        <h1 style="font-size: 23px;">Gross Domestic Product (GDP) by State - 2023</h1>
+                
+                        <p style="text-align: center; color:white;">Click on any state to learn about the 2022 and 2023 GPDs, GDP growth
+                            and the total population. <br>
+                            Data Source: <a href="https://www.bea.gov/data/gdp/gdp-state" target="_blank">U.S. Bureau of Economic
+                                Analysis</a></p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-6" >
+                <div style="text-align: center;">
+                    <h2 style="color: white;">U.S GPD from 1970 - 2023</h2>
+                    <canvas id="gdplinechart"></canvas>
+                </div> <br><br>
+                <div class="pichartt">
+                    <h2 style="color: white;">Continental GDP in $Billion - 2023</h2>
+                    <img src="data/Regional_GPD.png" alt="worldGDP" class="pichart">
+                </div>
+            </div>
+
+        </div>
+    </div>
+<<!--div class="container-fluid" style="background-color: rgb(0, 0, 0);">
     <div class="row" style="background-color: rgb(0, 0, 0);">
         <div class="col-lg-12">
         </div>
@@ -19,7 +48,7 @@
 
     <div class="row">
         <div class="col-lg-12">
-            <div id="map">
+        <div id="map">
                 <div class="Title">
                 <h1 style="font-size: 23px;">Gross Domestic Product (GDP) by  State - 2023</h1> 
 
@@ -31,10 +60,11 @@
    </div>
     <div class="row">
         <div class="col-lg-12" style="text-align: center;">
-            <canvas id="gdplinechart" height="100vp" width="100%"></canvas>
+            <h2>United States GDP (1970 - 2023)</h2>
+            <canvas id="gdplinechart"></canvas>
         </div>
     </div><br><br>
-</div>
+</div>-->
     
 
 
