@@ -7,9 +7,11 @@
 
 var map = L.map('map', {
   crs: crs42303,
-  maxZoom: 14,
+  maxZoom: 20,
 	minZoom: 0,
-}).setView([42, -97.0], 0);
+}).setView([38, -97.0], 0);
+
+
 
 var choroplethmap = L.choropleth(stategdps, {
 	valueProperty: 'Population', // which property in the features to use
