@@ -113,7 +113,7 @@
 
 #gdplinechart{
 
-    border: 1px solid rgb(252, 252, 250);
+    border: 0.5px solid rgb(98, 98, 95);
     background-color: rgb(1, 1, 1);
   
 }
@@ -130,7 +130,7 @@ canvas {
 }
 
 .pichart{
-    width: 465px;
+    width: 475px;
     height: 320px;
 
 }
