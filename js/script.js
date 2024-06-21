@@ -1,15 +1,15 @@
  var crs42303 = new L.Proj.CRS('EPSG:42303',
             '+proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=23 +lon_0=-96 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs', {
             resolutions: [8192, 4096, 2048, 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1],
-            origin: [0, 0]
+            origin: [0,0]
         });
 
 
 var map = L.map('map', {
   crs: crs42303,
-  maxZoom: 20,
+  maxZoom: 18,
 	minZoom: 0,
-}).setView([38, -97.0], 0);
+}).setView([37.8, -96], 0);
 
 
 
