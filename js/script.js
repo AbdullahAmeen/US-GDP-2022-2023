@@ -15,7 +15,7 @@ var map = L.map('map', {
 
 var choroplethmap = L.choropleth(stategdps, {
 	valueProperty: 'Population', // which property in the features to use
-	scale: ['#ffffcc', '#c7e9b4', '#7fcdbb', '#41b6c4', '#2c7fb8', '#253494'], // chroma.js scale - include as many as you like
+	scale: ['#ffffb2', '#fed976', '#feb24c', '#fd8d3c', '#f03b20', '#bd0026'], // chroma.js scale - include as many as you like
 	steps: 7, // number of breaks or steps in range
 	mode: 'q', // q for quantile, e for equidistant, k for k-means
 	style: {
@@ -36,7 +36,7 @@ var choroplethmap = L.choropleth(stategdps, {
         //this.openPopup()
         e.target.setStyle({
 
-          color: 'magenta',
+          color: 'black',
           weight:2,
           fillOpacity: 0.8
         });
